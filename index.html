@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Cadastro de Pessoas</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <form
+      action="cadastrar.php"
+      method="POST"
+      class="form-style-6"
+      name="form1"
+      id="form1"
+    >
+      <fieldset>
+        <legend>Cadastro de Pessoa</legend>
+        <br />
+        <div>
+          <label>Nome: *</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Nome Completo"
+            required
+          />
+        </div>
+        <div>
+          <label>E-mail: *</label>
+          <input
+            type="email"
+            id="email1"
+            name="email1"
+            placeholder="email@completo"
+            required
+          />
+        </div>
+        <div>
+          <label>Celular: *</label>
+          <input
+            type="text"
+            id="celular"
+            minlength="15"
+            maxlength="15"
+            value=""
+            name="celular"
+            placeholder="Número do Celular"
+            required
+          />
+        </div>
+        <div>
+          <label>Cpf:</label>
+          <input
+            type="text"
+            id="cpf"
+            minlength="14"
+            maxlength="14"
+            name="cpf"
+            value=""
+            placeholder="Número do cpf"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <label>Renda Familia:R$</label>
+          <input
+            type="number"
+            step="any"
+            class="form-control"
+            id="rendaFamiliar"
+            name="rendaFamiliar"
+          />
+        </div>
+        <div>
+          <p id="resp"></p>
+          <input
+            type="submit"
+            class="form-style-6"
+            id="submit"
+            value="Salvar"
+          />
+        </div>
+        <div id="resp"></div>
+      </fieldset>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
